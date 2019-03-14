@@ -1,0 +1,17 @@
+server:
+  port: 7777
+
+
+spring:
+  cache:
+    type: redis
+    cache-names: test
+    redis:
+      time-to-live: 10m
+  redis:
+    host: localhost
+    database: 0
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&useSSL=true&serverTimezone=UTC&useLegacyDatetimeCode=false
+    username: root
+    password: bit4admin
